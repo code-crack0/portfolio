@@ -39,6 +39,7 @@ export default function Experience() {
         {/* Render Chrono component only if window is defined */}
         {isBrowser && (
           <Chrono
+            lineColor="#F7AB0A"
             items={items}
             mode="VERTICAL_ALTERNATING"
             hideControls={true}
