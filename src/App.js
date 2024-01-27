@@ -6,6 +6,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Projects from './components/Carousel';
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
         <Skills />
       </section> */}
       {/* Projects */}
-      {/* Projects */}
+      <section id='projects' className='snap-center'>
+        <Projects/>
+      </section>
       {/* Contact */}
       <section id='contact' className='snap-center'>
         {/* Render Contact only if window is defined */}
