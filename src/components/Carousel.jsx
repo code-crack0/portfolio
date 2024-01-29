@@ -3,6 +3,12 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { SiNextdotjs } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+
 const CardCarousel = () => {
   const responsive = {
     desktop: {
@@ -21,9 +27,9 @@ const CardCarousel = () => {
 
   // Sample data for the cards
   const cardsData = [
-    { id: 1, title: 'Youtube Clone', description: 'This a youtube clone which is built using React,MUI and Rapid API to fetch the videos.',link:'https://youtubeclone954.vercel.app',link2:'https://github.com/code-crack0/youtube_clone' },
-    { id: 2, title: 'CarHop', description: 'This app utilizes a Car API to help you filter out cars and look at different car specifications to choose your next car',link:"https://car-application-one.vercel.app",link2:"https://github.com/code-crack0/car_application" },
-    { id: 3, title: 'REST API', description: 'This is a REST API which utilizes JWT authentication and mongodb as a database.' },
+    { id: 1, title: 'Youtube Clone', description: 'This a youtube clone which is built using React,MUI and Rapid API to fetch the videos.',link:'https://youtubeclone954.vercel.app',link2:'https://github.com/code-crack0/youtube_clone',icons:[<FaReact size={30} color='blue'/>,<SiMui size={30} color='blue'/>,<TbApi size={30} color='blue'/>] },
+    { id: 2, title: 'CarHop', description: 'This app utilizes a Car API to help you filter out cars and look at different car specifications to choose your next car',link:"https://car-application-one.vercel.app",link2:"https://github.com/code-crack0/car_application",icons:[<FaReact size={30} color='blue'/>,<SiNextdotjs size={30} color='blue'/>,] },
+    { id: 3, title: 'REST API', description: 'This is a REST API which utilizes JWT authentication and mongodb as a database.',icons:[<FaNode size={40} color='blue'/>] },
     
   ];
 
@@ -56,7 +62,13 @@ const CardCarousel = () => {
                     <a target='_blank' href={card.link2} className='text-gray-500 ml-2'><FaGithub/></a>
                 </div>
             </div>
-            <p className="text-gray-600 italic">{card.description}</p> 
+            <p className="text-gray-600 italic mb-2">{card.description}</p> 
+            <p className='flex gap-2'>
+                {card?.icons?.map(icon => (
+                    <span className='text-gray-500'>{icon}</span>
+                )
+                )}
+            </p>
         </div>
       ))}
     </Carousel>
