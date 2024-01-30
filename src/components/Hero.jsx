@@ -3,6 +3,7 @@
 import React from 'react'
 import { Cursor,useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Hero() {
     const [text,count] = useTypewriter({

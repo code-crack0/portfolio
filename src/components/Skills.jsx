@@ -9,12 +9,12 @@ import { SiTypescript } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
 import { TbBrandCpp } from 'react-icons/tb';
 import { FaJava } from 'react-icons/fa6';
-
+import '../App.css';
 export default function Skills() {
   return (
-    <div className="skills-container">
+    <div className="">
       <h1 className="text-4xl max-w-[1450px] text-white font-bold mb-4 mx-auto p-8">Skills</h1>
-      <div className="grid grid-cols-3 gap-4 justify-items-center">
+      <div className="grid grid-cols-3 gap-4 justify-items-center col-span-4">
         <motion.div whileHover={{ scale: 1.5 }}>
           <TiHtml5 size={64} />
         </motion.div>
