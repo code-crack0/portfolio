@@ -27,10 +27,9 @@ function App() {
          <Experience />
       </section>
       {/* Skill */}
-      {/* <section id='skills' className='snap-center'>
-        
+      <section id='skills' className='snap-center'>
         <Skills />
-      </section> */}
+      </section>
       {/* Projects */}
       <section id='projects' className='snap-center'>
         <Projects/>
