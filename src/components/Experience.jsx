@@ -35,7 +35,7 @@ export default function Experience() {
   return (
     <>
       <h1 className="text-4xl max-w-[1450px] text-white font-bold mb-4 mx-auto p-8">Experience</h1>
-      <div className='flex items-center justify-center flex-col max-w-[1450px]'>
+      <div className='flex items-center justify-center flex-col max-w-[2150px]'>
         {/* Render Chrono component only if window is defined */}
         {isBrowser && (
           <Chrono
